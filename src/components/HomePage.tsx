@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { site, services, serviceArea, financing, reviews, type ServiceKey } from "./config/site";
-import { track } from "./lib/whop-track";
-import { EstimateForm } from "./components/EstimateForm";
-import { BookingSection } from "./components/BookingSection";
+import { site, services, serviceArea, financing, reviews, type ServiceKey } from "../config/site";
+import { track } from "../lib/whop-track";
+import { EstimateForm } from "./EstimateForm";
+import { BookingSection } from "./BookingSection";
 
-export function App() {
+export function HomePage() {
   const [selected, setSelected] = useState<ServiceKey>("repair");
   const trackedServices = useRef(new Set<string>());
 
